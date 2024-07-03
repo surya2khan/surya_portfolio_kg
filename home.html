@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio -Surya S</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" href="https://e7.pngegg.com/pngimages/323/312/png-clipart-software-developer-computer-icons-mobile-app-development-web-developer-computer-software-fiber-internet-text-logo.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Surya Senthilkumar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./index.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="./skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="./card.html">Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container text-center">
+        <h1>Surya Senthilkumar</h1>
+        <p>Full Stack Developer</p>
+        <a href="./index.html" class="btn btn-primary">About</a>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 surya. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100050948813037&mibextid=ZbWKwL" class="text-primary mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-primary mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_surya_iz_?igsh=MW80Mm92eGJ0Zm94cw==" class="text-primary mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/surya-s-289529248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Custom JavaScript for form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (email && message) {
+            window.location.href = `mailto:surya@example.com?subject=Contact from Portfolio&body=${message}`;
+        } else {
+            alert('Please fill in both fields.');
+        }
+    });
+</script>
+</body>
+</html>
